@@ -1,0 +1,59 @@
+# Project Info
+site_name: Tech Writing
+site_author: Kelvin Spencer
+
+# Copyright
+copyright: Copyright &copy; 2019 - 2020 Kelvin Spencer
+
+# Configuration
+theme:
+  name: material
+  icon:
+    logo: images/focus-field.png
+  favicon: images/focus-field.png 
+  language: en
+  palette:
+    scheme: slate
+    primary: white
+    accent: pink
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  features:
+    - instant
+    - tabs
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - footnotes
+  - pymdownx.arithmatex
+  - pymdownx.details
+#  - pymdownx.emoji:
+#      emoji_index: !!python/name:pymdownx.emoji.twemoji
+#      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+
+# Extras
+extra:
+  manifest: manifest.webmanifest
+
+# Page Tree
+nav:
+  - Home: docs/index.md
+#  - Getting started: docs/getting-started.md
