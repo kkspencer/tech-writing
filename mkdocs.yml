@@ -8,12 +8,11 @@ copyright: Copyright &copy; 2019 - 2020 Kelvin Spencer
 # Configuration
 theme:
   name: material
-  icon:
-    logo: images/focus-field.png
-  favicon: images/focus-field.png 
+  logo: /images/logo.png
+  favicon: /images/logo.png
   language: en
   palette:
-    scheme: slate
+    scheme: default
     primary: white
     accent: pink
   font:
@@ -40,9 +39,9 @@ markdown_extensions:
   - footnotes
   - pymdownx.arithmatex
   - pymdownx.details
-#  - pymdownx.emoji:
-#      emoji_index: !!python/name:pymdownx.emoji.twemoji
-#      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.smartsymbols
   - pymdownx.tasklist:
@@ -55,5 +54,7 @@ extra:
 
 # Page Tree
 nav:
-  - Home: docs/index.md
-#  - Getting started: docs/getting-started.md
+  - Home: index.md
+  - Go Modules: using-go-modules.md
+  - Cuelang: getting-started-with-cuelang.md
+  - Avro IDL: authoring-schemas-with-avro-idl.md
